@@ -111,5 +111,14 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: MSIX Package
+        name: Seatbelt
         path: ${{ env.Wap_Project_Directory }}\AppPackages
+
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Seatbelt
+        path: |
+          Seatbelt\bin\Debug\Seatbelt.exe
+          Seatbelt\bin\Debug\Confused\Seatbelt.exe
